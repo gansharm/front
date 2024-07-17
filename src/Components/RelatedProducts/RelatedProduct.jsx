@@ -3,6 +3,7 @@ import './RelatedProduct.css'
 import data_product from '../Assets/data'
 import { Item } from '../Item/Item'
 export const RelatedProduct = () => {
+  
   return (
      <div className="relatedproducts">
         <h1>Related Products</h1>
