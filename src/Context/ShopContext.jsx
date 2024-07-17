@@ -16,12 +16,12 @@ const  ShopContextProvider  = (props) =>{
     const [cartItem,setCartItem] = useState(getDefaultCart());
 
     useEffect(()=>{
-        fetch('http://localhost:4000/allproducts')
+        fetch('https://backend-4-me4z.onrender.com/allproducts')
         .then((response)=>response.json())
         .then((data)=>setAll_Product(data))
 
         if(localStorage.getItem('auth-token')){
-            fetch('http://localhost:4000/getcart',{
+            fetch('https://backend-4-me4z.onrender.com/getcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
